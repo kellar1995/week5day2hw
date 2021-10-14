@@ -6,6 +6,6 @@ site = Blueprint('site', __name__, template_folder='site_templates')
 def home():
     return render_template('index.html')
 
-@site.route('/profile')
+@site.route('/signin')
 def profile():
-    return render_template('profile.html')
+    return render_template('signin.html')
